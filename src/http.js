@@ -3,6 +3,8 @@ import 'babel-polyfill'
 
 // ルート設定
 axios.defaults.baseURL = `http://localhost:3000`
+axios.defaults.headers.common['token'] = 'aaaaaasdfasdfasf'
+
 const http = {
   async request (method, url, data) {
     const lowerCaseMethod = method.toLowerCase()
